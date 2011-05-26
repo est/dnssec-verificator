@@ -1,0 +1,629 @@
+; File written on Sat Apr  9 17:04:16 2011
+; dnssec_signzone version 9.7.2-P3-RedHat-9.7.2-5.P3.fc14
+a.example.com.		3600	IN SOA	ns1.a.example.com. admin.a.example.com. (
+					2006081401 ; serial
+					28800      ; refresh (8 hours)
+					3600       ; retry (1 hour)
+					604800     ; expire (1 week)
+					38400      ; minimum (10 hours 40 minutes)
+					)
+			3600	RRSIG	SOA 1 3 3600 20110509140416 (
+					20110409140416 16902 a.example.com.
+					hcipvZKi+Rya7VVfE3p1cZl1aYlKJWKcIS1Q
+					ohpTTfbcWQzzYfMFUhao+452apvllkMyov5w
+					1jUN1UaCtFTg8g== )
+			3600	RRSIG	SOA 10 3 3600 20110509140416 (
+					20110409140416 35867 a.example.com.
+					uchMZmwv3jqThQwyJ4KtwP+RrS4rB7CMC1d4
+					mb6naHY81gwpREm/EgNhOKxKFHpj9dCBET0W
+					jJbXnOSXyLvqO4gUSzyuipr1niDcBCtSc7mN
+					VvtJielTOAzm6e4Ge6bsUZT9M3LgDpfJ+gJE
+					XDuKG2LQwWI8nGMs6G/eEX7LxUU= )
+			3600	NS	ns1.a.example.com.
+			3600	RRSIG	NS 1 3 3600 20110509140416 (
+					20110409140416 16902 a.example.com.
+					JD/4Md+9YnFB3n1xS7p1B59Rk7ReY2Tt/t8+
+					GudvntA+S+PPNVF0x05OuOq1VE/nPq2bpkKQ
+					ot6sHKJ8wiNJTQ== )
+			3600	RRSIG	NS 10 3 3600 20110509140416 (
+					20110409140416 35867 a.example.com.
+					Jp4CIq9MUpYsfwdgRXnITDryo8SDNKqEzuox
+					8eWfpcDH8bnvw96YfnnFI+sR/oeZILs2G/MU
+					o6U4LMcRv1qkNMemK2UbWs+9nIPOl3ifLyph
+					GMorsrdUoDYqUVDVnae0G2tvYJgqu5bn8lJD
+					GSLCDKWrXVqFcReFWoASzKXNHrE= )
+			3600	MX	10 mta.a.example.com.
+			3600	RRSIG	MX 1 3 3600 20110509140416 (
+					20110409140416 16902 a.example.com.
+					wqrTDAac1QS4SDXMOdo5xLmqm6z46bPQS2fr
+					danUBkywAIbgbpWB7IE1LyUuWrCfOPco945N
+					QIgHps0rSdJ2mA== )
+			3600	RRSIG	MX 10 3 3600 20110509140416 (
+					20110409140416 35867 a.example.com.
+					suffKzK5i/T8KDuIjE/xRKHuECFKnrkNm8w8
+					riHIkaQH9Kn1nrQ+S2RSvpuzHNihsvm7LuN/
+					CFhOv28Wtk6CXOrVWWkJ24HfplyakTUwniIJ
+					CX87LnFAwsZXvLQuRFFdRWEu9/w3bgzWJdML
+					JlTANK00nv3oHgQIt1ij6iz8KPw= )
+			38400	NSEC	mta.a.example.com. NS SOA MX RRSIG NSEC DNSKEY
+			38400	RRSIG	NSEC 1 3 38400 20110509140416 (
+					20110409140416 16902 a.example.com.
+					JS8mIhdv8pMWK7qTFrp0QV6g+7+OtFBtQQYG
+					FSYpGGGsrO8AARqNWIDoPmfAu5zJ12q2LAYr
+					8S7Hg9fIw4ybcg== )
+			38400	RRSIG	NSEC 10 3 38400 20110509140416 (
+					20110409140416 35867 a.example.com.
+					AlYaIjME2L9/jff80T872zJn5aaSu3VY69/Q
+					9xqK6P+83sxpQja5kC/sjnSS9w6kP0hkKOpd
+					aaduRZSewOVbJiQuocbczAmrUdQT+BoLsFDf
+					oqAz102vGjjxZLLII1+ED4ySBT+Ia8z2DWd3
+					9Hp+m1l+QXpyfXPStxaPPgJRrIM= )
+			3600	DNSKEY	256 3 1 (
+					AwEAAcdxAUZmG/4nuOUxVauMS1G69kHdsHrp
+					+Ct1webYrBfpoIKI5rzpxflLHdtaxHRKeIG2
+					OT4H9ODe1k7/iCFCBr8=
+					) ; key id = 16902
+			3600	DNSKEY	256 3 10 (
+					AwEAAcUP838pZf6uSkyIP21skEuf/MWRfRIs
+					VYrAeCiph1IS4zUynP6116WGJQpJbzjOA+gW
+					H0mwF0SeTPfevVMM+4BY64ut18sMxi7GvvhC
+					vMxdYHYfZvoIEE5gnIlXLvMBrmreZlxloeiS
+					4lPogbyj0zrCIXI2txGn3/HMVCHqHe43
+					) ; key id = 35867
+			3600	DNSKEY	257 3 5 (
+					AwEAAcOXN7+1sSytx1t57BEOJiQrrkKnUbHN
+					z4omeHIIZRe+vrwVz00KH6YtYgi8greqFk2e
+					eYDXs4zKA15P23q0PO1zEuASoTUuRhLkUk41
+					AuQmd1Oj3hPCLqYNi998xulVm24Q0hJ3Ml0D
+					aSoHsW2ZxBqy8zNeiS87TpUeWJslRMIGn34m
+					j79+oAJcCs0edLwEgk+XsR47MynNkI7Z9PUE
+					hQ/GZMfcAvHLlZANPctJ8+8f2o61fIcs/+V6
+					asevy19U5IUGt3p86i2fyx+T3zW6LJ3zbUh7
+					CZWwdAF+c0QObvhLCsEtMcgQkuVBBYTcIpEB
+					GypO24KiODqDoXy1gPpr4Vs=
+					) ; key id = 49756
+			3600	RRSIG	DNSKEY 1 3 3600 20110509140416 (
+					20110409140416 16902 a.example.com.
+					ABXHLhHNJwwr4YSWVRIoOEV6zjx/vWzLyKlo
+					fWxCF72B6oAwd5bkf7D3rSLaTs91LZ1rfnpE
+					/tmmaY8lmViuHg== )
+			3600	RRSIG	DNSKEY 5 3 3600 20110509140416 (
+					20110409140416 49756 a.example.com.
+					eHqzpxsAb8pDwUMHXJMjEsIy16H/sULaqC4I
+					KA2ZA/o5j7RAW9Iq6+2k3KEQtAJPCGw/OD9k
+					K7X6r38ZVwXC1qT4Exgn8A1Zo59fApMqvGPu
+					u9YYtIzDnJiYnQpMPm543tU0AI1CyEI193pd
+					ATvFGYGvrQ/KOIg+uMp/6EQpnZI+9umPdwS5
+					zvKoi1PZYXrBR79gnAERpHZ8yM54zKfO39PC
+					6yfKtn0Y9wNGCl6Tjh7c3zwQ3/Zn37V1qAxa
+					gB3GOPX3eAQKRxAZTT9+IXO40nRQX27IVgrf
+					VomQR4I7nQXEvePFW4BcGlLP5ISP2U2iKORU
+					d2W0z1DYuoUAQ90y8Q== )
+			3600	RRSIG	DNSKEY 10 3 3600 20110509140416 (
+					20110409140416 35867 a.example.com.
+					PN9+EoAwM6T9kzKnpJlVwirp7x8IPlzjp2SE
+					+9G5QBPFK7ZJzOyy2lwvakOBVRwupFwF3LT/
+					UcAW8p3qLdkenOKnMY6sim2uay8MVXAC9nnW
+					eim5+mywfprfRwkILiEwmOJROK+2aRcNVjFx
+					bEJNe0QHW4Xsbe/zm0exy0Z0+kw= )
+mta.a.example.com.	3600	IN A	192.168.1.234
+			3600	RRSIG	A 1 4 3600 20110509140416 (
+					20110409140416 16902 a.example.com.
+					ww3ZYleJAl2xyQwRzB1BkJCnK0cS+pxZVZaL
+					YsNM1FifQZ5qjbsfSA2ToGXnzpsav5MlFa0j
+					OfIbb2zoA3DsTA== )
+			3600	RRSIG	A 10 4 3600 20110509140416 (
+					20110409140416 35867 a.example.com.
+					daAEHRt1KET+PsdmtfWqxf4MzfJZf9MxPbV8
+					nFC5ZF8YfKnEVNvW+/X7luoitqHO9X/uLwOn
+					z+JuS4PZl7/JsJEe4qSWKDS97YWPEC7M5II/
+					NS3uFbxI8ajffpqRnCC03zW8CkDFMxkojlJ5
+					wPuR1L9pqsZ1xrvrTRbvWNtKoF4= )
+			38400	NSEC	ns1.a.example.com. A RRSIG NSEC
+			38400	RRSIG	NSEC 1 4 38400 20110509140416 (
+					20110409140416 16902 a.example.com.
+					aTOHzNmcpLyVoaANb5AL8qjlbDuaMGr/gARG
+					Vys+jLICa9XoXEQnVAXdCkg42HuQkr4CCG5p
+					57nDnw4j+J0P6Q== )
+			38400	RRSIG	NSEC 10 4 38400 20110509140416 (
+					20110409140416 35867 a.example.com.
+					PYBYzj8yS3ECaDyocw0oyHFRCcjAy79whOvE
+					rS5Y6gShiNUqdh5Vk5J0HFHMAaSAc6s8iH2T
+					S44ZPvXoAqv7wDIfmjpjiRnq2A17CZdWP5WI
+					disbayZAKl+mYd0U0nwswrmIlz8e2KUViA4d
+					Y9rS2CDykWBWosaA3tBe5mhwJQ0= )
+ns1.a.example.com.	3600	IN A	192.168.1.222
+			3600	RRSIG	A 1 4 3600 20110509140416 (
+					20110409140416 16902 a.example.com.
+					Zup/CayiCq6wHpguyoQVSTqh9+zyypbS+ovP
+					rFnuqHBSRiGg36EGZlyqlrNbqSvWGgvVkqHy
+					K/9O5CnlCYXHqA== )
+			3600	RRSIG	A 10 4 3600 20110509140416 (
+					20110409140416 35867 a.example.com.
+					UQvosPJGYFae+3muJLncP9pjgdIb6e9MXJbX
+					9TEhRJXk3uwy5MZIHzPWtYXDXtcME/PCZpg8
+					0WNrYaIjXKmW2fV9EC8udXHQecvodY8uPQo5
+					R8F4uFn8VZtnZ2SPZA7L5mrijrrqIA4Dlgm0
+					EjdFlVzeXHfsGSqzr8iOWenQF3I= )
+			38400	NSEC	test1.a.example.com. A RRSIG NSEC
+			38400	RRSIG	NSEC 1 4 38400 20110509140416 (
+					20110409140416 16902 a.example.com.
+					WDRRMmYXbkT4OD/P3fJhFAUOz99m8JJzSlrD
+					yAokHqED+rAwRUjsS0FPuWt9wOfdTbUbnkzc
+					bbKq4peDWmoE8A== )
+			38400	RRSIG	NSEC 10 4 38400 20110509140416 (
+					20110409140416 35867 a.example.com.
+					DzQK8kk7k05Jlws8LX8vBk3FxI7OboZ9hidI
+					oiwtE7U5tmEOPGKENEMyrYyjiIFmcVIkIuoD
+					tauFIaIPSwmyVevcGcFc2+Wit/HqVwLN7Gr4
+					aq6cqt1/38fLq9VSB5kZ/ROSnQUEjvt3q8rl
+					lhoWhdvb3y/3TDhEIVCYw88u7JI= )
+test10.a.example.com.	3600	IN A	192.168.0.210
+			3600	RRSIG	A 1 4 3600 20110509140416 (
+					20110409140416 16902 a.example.com.
+					W+RpAxMid+mYcqTN3hQiPvft6AVZin8OhNyq
+					rUQo75Ce11rNhcMOLrbNHvH+sEJQGs+zgE+o
+					PoCr3iuGtM1AlQ== )
+			3600	RRSIG	A 10 4 3600 20110509140416 (
+					20110409140416 35867 a.example.com.
+					N3L0/vgqw2ZUEAZxkpLKzRP1oRnJN30vuwb9
+					dDKQuQn62bc4Fgw57htGDFP7No5NVIH9XrQy
+					C/b4302BNxWlComBC/X3U81utBOY28vj4r58
+					hxD0glnQSGoJAXEg3+zzUMyM+m0e3NTNEf1Q
+					bQYTWzQjdn16RpX8+F9+n9t1zig= )
+			38400	NSEC	test11.a.example.com. A RRSIG NSEC
+			38400	RRSIG	NSEC 1 4 38400 20110509140416 (
+					20110409140416 16902 a.example.com.
+					Em0zIg8CY81+dkPqgEh7H+aRb+BqhnHgIptw
+					kuZ5YKyZ/HkUkekAoFG+eCpKWsCIPvbtDC8Y
+					S/P6pycg4SnzCA== )
+			38400	RRSIG	NSEC 10 4 38400 20110509140416 (
+					20110409140416 35867 a.example.com.
+					jLxhHVAZpirOnzGMmVz6TzwEMIBjyvLx7V9b
+					Yoesqr30FYq21urOqNYhJbQsZu9cQv8gLJLJ
+					/KTGnisaID2tLaFdZGQ/zd/oN3V9zfr26Il/
+					D/MVpgNcgK26qxBHwaLDBpjJiP2/3Agqp1C1
+					yFWL5ilKA4NSEvIVpXUk9smtWXk= )
+test11.a.example.com.	3600	IN A	192.168.0.211
+			3600	RRSIG	A 1 4 3600 20110509140416 (
+					20110409140416 16902 a.example.com.
+					uv4NRfh0Pb3LhQzn8W3mBsOjCxzF8A3XvBQ2
+					iwpA6RPf4QmtlI3Vq5REHtNCv1VEu5q5YkkS
+					QMsfKJC/DF++zA== )
+			3600	RRSIG	A 10 4 3600 20110509140416 (
+					20110409140416 35867 a.example.com.
+					RxIznMiJ2LpDRvBvQOxL63wRKmdGz4cSr4qd
+					KB2hofSTcufQ/CvrTDDCZnfq+PB5BixbaOUr
+					dWyA/a4ASMyid7RAubERuhFRXSYojvMhr/Sr
+					9cTv6klDsOHBHFAQ6w8drB2PcTd+alUzAF8I
+					ZObIoRV1PMR737we4WZaj59y81A= )
+			38400	NSEC	test12.a.example.com. A RRSIG NSEC
+			38400	RRSIG	NSEC 1 4 38400 20110509140416 (
+					20110409140416 16902 a.example.com.
+					nhsR5VkUQl1f0heaI1b2uPlUyA/834RIOy1G
+					TLMNcX4kfGgjee+PquqBsfN3vtGzBp5oF5QV
+					0wzBr6MmjRbzpw== )
+			38400	RRSIG	NSEC 10 4 38400 20110509140416 (
+					20110409140416 35867 a.example.com.
+					ZuW3y3OpVSv5lG/rMOMYlyKLLW5dXnjO26uC
+					l7KS4Jvtvpm8EY79AE3RSU9/0Z+JNSJC5L0b
+					emi5fXUkLZOb9gZJqeDKvGtzzo5Gli30GtOh
+					hZiNwr7Ef2MT6jpGpGFPtzrl7T1xbHpEmfn0
+					T9/9428Rxm1Qv5oehcWvnd23Dq0= )
+test12.a.example.com.	3600	IN A	192.168.0.212
+			3600	RRSIG	A 1 4 3600 20110509140416 (
+					20110409140416 16902 a.example.com.
+					VGYDvOoQ8OzUfENrWePp7E3K/3eguGdnkcEP
+					n0cALzO3InrG6x6YAvwnhJ5slRwEPuQ0mZ8l
+					H7cQz1ZInYDSnA== )
+			3600	RRSIG	A 10 4 3600 20110509140416 (
+					20110409140416 35867 a.example.com.
+					nQoUdZ/caiTrhKUrfx6crlKDoI0RykLoSy5L
+					iDXVy2ENOLv7GnjpjuiDeaF1pNc82KlMq7p4
+					fIQ72dYUawKMgTMJA52k4FqOwLUc7B8WyAaJ
+					H8XYjArodJ4aHpaG4j1t6yFbnSJXxxmytG2J
+					rpO7h3icM9a/O9H7pdc7TNjAxfA= )
+			38400	NSEC	test13.a.example.com. A RRSIG NSEC
+			38400	RRSIG	NSEC 1 4 38400 20110509140416 (
+					20110409140416 16902 a.example.com.
+					CNHoF9kjoUGZo2lpOAv/iJJJnVY8xbQfFMO0
+					agcJOxz9IaNbHiLly1s4953DUY02Q/qb8P5h
+					NCO4UyDfPLA6iQ== )
+			38400	RRSIG	NSEC 10 4 38400 20110509140416 (
+					20110409140416 35867 a.example.com.
+					W2As2fv2SYhRrB9na13PKbqgwG1+T6zeLbDT
+					v+i9ef9fN7tLemIETg4qd1kxJeZz1/BBL+qL
+					5/7GtQ79pMMgSGqTCAznjifpWJD+dHaKfAYN
+					WLjsjMEmuc5QeocWvADUrEJXGyMkYeDNOWC+
+					1CVDKol7tOyF6fRYQ8gOqReF704= )
+test1.a.example.com.	3600	IN A	192.168.0.201
+			3600	RRSIG	A 1 4 3600 20110509140416 (
+					20110409140416 16902 a.example.com.
+					MBCCycsbjeD867OwMCros+ut5z6TFe1G/Q1b
+					A02iC5a0veLWrqmwyJGNxt5nqp/VwYsup9Ia
+					3jLMSLVWfhhYkQ== )
+			3600	RRSIG	A 10 4 3600 20110509140416 (
+					20110409140416 35867 a.example.com.
+					CRpFIlxMdAeE2LTVMYBXlUcP6NtJdDyboYf6
+					GWfNGAFSvshXDGXGikNIk3baT7IoEUCT5ofr
+					n1/sQho8No5m+iiReGyya4HWbsM4cOPsRBbv
+					YMMDS0UY0O9JOohqXhV1e0MqcVk0nvWtHu+T
+					fLC/U48H30/2d1EK+ocjrAW3Xr0= )
+			38400	NSEC	test10.a.example.com. A RRSIG NSEC
+			38400	RRSIG	NSEC 1 4 38400 20110509140416 (
+					20110409140416 16902 a.example.com.
+					lxoiVQrbBBWLt0ejUrpB3P2mhu/szA+9oWO0
+					oET2srHvm/PMX009oyvkTHExaM31rX9n4/mm
+					Bt8Jh0AFdvzc8w== )
+			38400	RRSIG	NSEC 10 4 38400 20110509140416 (
+					20110409140416 35867 a.example.com.
+					AK9B6Ynd17E1fN0+EwC0U9gQOgeIQVulzmhz
+					6A0AE2udKwOULy93kLf+ygdd0ow8hdq2ejyy
+					3pyiWV6qolNM7eTSdJzAAXJ+glvjKPSRJtHP
+					RluePUT6Iv7y+O077Tye+xvH90uLSNPBbglj
+					EI1e0YbYuJkBDhjzl202io+Yn08= )
+test14.a.example.com.	3600	IN A	192.168.0.214
+			3600	RRSIG	A 1 4 3600 20110509140416 (
+					20110409140416 16902 a.example.com.
+					ortJHrA95PJcXQvirtBVbqvcRIXCfC1eOry+
+					CJq/xcywg+E4JHVjg4co9/VlSXTCfdjocdqC
+					2KHPhepjZPJx3w== )
+			3600	RRSIG	A 10 4 3600 20110509140416 (
+					20110409140416 35867 a.example.com.
+					A88G8/M9qzCFrGZDlQqLEqdfvMuFnImBJoQ2
+					DFBxWFWNo1ceTsSvx6xe6gmihdz+d5yrr/fh
+					nfBQBUS078c4j+hkBvOndeO4wWsl+eKclqzv
+					QBR+DVHLfiuerrcke+XHMr31KVGJKz3lKpiG
+					2SOmKeHb3BsQ8amtBPqkeFANCaE= )
+			38400	NSEC	test15.a.example.com. A RRSIG NSEC
+			38400	RRSIG	NSEC 1 4 38400 20110509140416 (
+					20110409140416 16902 a.example.com.
+					CaWAMsie5yZ2Fjr5ef0mDyzSBmKcmGOBR/lb
+					CEDMsJ9M6P+a0RWyNX3c4cHY1vK8TG7kHEcj
+					Rk7wXNg5X9wuUA== )
+			38400	RRSIG	NSEC 10 4 38400 20110509140416 (
+					20110409140416 35867 a.example.com.
+					JItWCgzFh5subU0WElP7CPSvWe8T/r/Fhvnj
+					6vkPpdqIijLVkhroVSWVZ/gmCphuuCoIt33k
+					VcXAv4189+IgyLnYZroKDS4Wio7/c5gnpVjU
+					cfeBCa85LHDoeMkSFj/egjiAlX8QNsocdtcn
+					qJaPvVpLOqFhqjfQqBro7e6E9Ew= )
+test13.a.example.com.	3600	IN A	192.168.0.213
+			3600	RRSIG	A 1 4 3600 20110509140416 (
+					20110409140416 16902 a.example.com.
+					Qs0LiTj7JDtJasCOriNkeFTPKus59tAYf5z1
+					ciMPm28UNgnlYDn2UwDGwcUL1qGMQfOT+pWX
+					2gBjlV8sR2byLA== )
+			3600	RRSIG	A 10 4 3600 20110509140416 (
+					20110409140416 35867 a.example.com.
+					posTEW+hPD4BXryFYx/S9v1ejMuVr/Bw8y8q
+					OGpfNJupgMtR5XuHHjUd4ugzYdiR9j17y4ih
+					/uzwYGPanpOmVvheuEO+KF3xSO3psizVR4y5
+					Xc68xy3aDs5XjZjzLXUkImdlqwigXjMTyTjc
+					L4Do5xjvJs4hceYBUK8Tz44ugRY= )
+			38400	NSEC	test14.a.example.com. A RRSIG NSEC
+			38400	RRSIG	NSEC 1 4 38400 20110509140416 (
+					20110409140416 16902 a.example.com.
+					MEthjdi9ri9EBQKFhtkWytJWpSqv9327Osv8
+					fQ7VSgJFEvDaD+Edetyp1hCTdjQkzuFsdMSg
+					4k2K4ee04LDTkg== )
+			38400	RRSIG	NSEC 10 4 38400 20110509140416 (
+					20110409140416 35867 a.example.com.
+					ZtCPBbdEuxFJGKoUcSpT6iaFFVY1IrIeb1p0
+					xXjGytr0FCUVyWHot/GcMKb1UuiYPOGgN/qC
+					gTiYgGSAy/KE9ZS5+sPCss1bMeDrysbESRwv
+					jr7cPOoC7VXQcLoS0TeQiAQW8YgmSfodXNwi
+					j3auRTccG29nWj/s2FeAYaRSThI= )
+test16.a.example.com.	3600	IN A	192.168.0.216
+			3600	RRSIG	A 1 4 3600 20110509140416 (
+					20110409140416 16902 a.example.com.
+					COxBDuVv4EKgf4WSEHYibDH3swPefaebA6mc
+					C0NL+1xmPN9XgXfpzEWC+PS/s6y6ThbnU/su
+					i2h/koZaW3NL2g== )
+			3600	RRSIG	A 10 4 3600 20110509140416 (
+					20110409140416 35867 a.example.com.
+					iyNb8PP2+Ng6qb5vjSF3pmdDMaEQ8U91NtDU
+					mOl1nwGkgbrGTzgQK2WjX8iQdInUgbgrbkXD
+					s6Q4yzLzTDZSFQum33GTp7OBXCvw4V4yp+nG
+					JhxLZm2t0C4NlNXqI4Q/FvrOXmNNI41111zJ
+					qitLiRISkvJiBmrnVYJ/mt1IMHE= )
+			38400	NSEC	test17.a.example.com. A RRSIG NSEC
+			38400	RRSIG	NSEC 1 4 38400 20110509140416 (
+					20110409140416 16902 a.example.com.
+					ExlRUD7axKi/PNUGmgIW/0VKYvjIh5LU7nJN
+					uKqqEN43vwXWPSCZiIDzjkEyt4GNFmSINuVp
+					uNJbdpO81siOnw== )
+			38400	RRSIG	NSEC 10 4 38400 20110509140416 (
+					20110409140416 35867 a.example.com.
+					TM8cGS377g+n1Ljyivp/k0USKX5uyy0fNcuF
+					OnTdsqIzDy9mExY+yiK6A4L1zlqqL2X6Ng9l
+					69YCCQOljDCxXuklpMLyxHJzTs4x3Yuz0LRL
+					Fx7ZFfUDNgYMCBRyRaPXa0pVoK6rxOjONmul
+					/o/CER3vmUuqTNxOJ+ysUh3+Ngk= )
+test15.a.example.com.	3600	IN A	192.168.0.215
+			3600	RRSIG	A 1 4 3600 20110509140416 (
+					20110409140416 16902 a.example.com.
+					ceII2WyLKHRIspuqjJO+BAIkjpTp+bdOeqLB
+					x+KGiKreSZah7W37bn67wSYhJzxSibzpzrCH
+					D5mm8zTUCaeVaQ== )
+			3600	RRSIG	A 10 4 3600 20110509140416 (
+					20110409140416 35867 a.example.com.
+					wIVkCyv4Zl4rOLdPgcb3uioJYVYq8xc/6mZ0
+					0vdSy2ETKVQYOyGEQyBPCl/17SeCkCE0mw1O
+					mi6X3XQ3RnaxiGa2hVrQRI61kMTiu1gTaZ77
+					3kPIRf6MTVGQpC5/s+/GJc5rbARIoxYOrOnv
+					TDcMV8AA584TYha7rA6Q+V0wobg= )
+			38400	NSEC	test16.a.example.com. A RRSIG NSEC
+			38400	RRSIG	NSEC 1 4 38400 20110509140416 (
+					20110409140416 16902 a.example.com.
+					sFfV9fNakN5n29R58R+HrFAVBkFftTklliN8
+					bhmrQM62PoRERkG0B5JyHJEpaxKE5uGhASDY
+					SkQ6kIsVtts0Kw== )
+			38400	RRSIG	NSEC 10 4 38400 20110509140416 (
+					20110409140416 35867 a.example.com.
+					De41iS5MSMOwVccotJWabFZ0imibvo8QkNDf
+					3DIMMVH3uvJjGRw5RjxLelYwgZraGhys0e31
+					s3bsAcb4Vo4OydOkfMjvcSFkqKU4LzZdZG9a
+					FsRSJ5+yPbeMxqaVGVa7u1XZMsxIqXS/hVJ4
+					VEK2j5Y9eNDTIFPHYbQSs1FWLLg= )
+test18.a.example.com.	3600	IN A	192.168.0.218
+			3600	IN A	192.168.0.219
+			3600	RRSIG	A 1 4 3600 20110509140416 (
+					20110409140416 16902 a.example.com.
+					sQgGwjsUrBfyZpS8D3rvB8FDSoZ5yFFDi+2m
+					bLXgU1rP1618vvmr031Hw+1iWETtq/wsXc1S
+					0L0tipvUSZwaig== )
+			3600	RRSIG	A 10 4 3600 20110509140416 (
+					20110409140416 35867 a.example.com.
+					sEPlqomzZoyqgHOzaSaq7XLM1pxfL5GjFQyC
+					/R8DG3wXc0AVntl18aBw1l1EHWOD8j8TKPo5
+					5EKnXzRYKvhtGSwItZcdshmXI+1Y7eszVWop
+					Yq7l2Z9PdSLupq1IlM5ZzD05Sp/0+Z9/N2zN
+					ERKZP0rMivKplk2lxZSux490qnU= )
+			38400	NSEC	test2.a.example.com. A RRSIG NSEC
+			38400	RRSIG	NSEC 1 4 38400 20110509140416 (
+					20110409140416 16902 a.example.com.
+					LW0qzluRVUtA/fh8O6F9FWdb8+PfslcuLrs3
+					fO80elHpMOd0yhI28olo0UB2/WmCejHgqro4
+					BQZ9eLJmaAe/hQ== )
+			38400	RRSIG	NSEC 10 4 38400 20110509140416 (
+					20110409140416 35867 a.example.com.
+					M2c0L5lSox7bDw8Nar19+BJjwkuJDu+Tvl8U
+					m1mp80HqB4xBdL0+IzFiWM9h6E1GOQpG/g5u
+					CYcpzGNKrPSHTMXHuXnAOJTJKb3ZHvCZNIlv
+					F3jXWGhNbwBY67cMK0yJjK7ib3RRdsLj7Jxq
+					wsEr+MpWgbfvjnfN4qkAreTP7mQ= )
+test2.a.example.com.	3600	IN A	192.168.0.202
+			3600	RRSIG	A 1 4 3600 20110509140416 (
+					20110409140416 16902 a.example.com.
+					FvQMi/fDwRFhAND1m/9uZLUe/bQkSyhC16MX
+					KfAf0GiEu/orlKRNliT0lm8yI++d7mAfH3ND
+					N3A1yHuaUEKh0w== )
+			3600	RRSIG	A 10 4 3600 20110509140416 (
+					20110409140416 35867 a.example.com.
+					psiABpX5WZcHegeS9CnV0xh3jGUb67ZQFqcr
+					mBNargWVH5wk3zsFVboSfrNaM/RCjD1ROoj0
+					nLcYHY2PRNMawJ8dGz4+o58K/lbpWxMjMnbx
+					Bb2wwXRkuGJelSo05vnk3CSpp6AWTI9cqAbV
+					/cArdWRSZb1myzQ4CMLngFwbd8Y= )
+			38400	NSEC	test3.a.example.com. A RRSIG NSEC
+			38400	RRSIG	NSEC 1 4 38400 20110509140416 (
+					20110409140416 16902 a.example.com.
+					qhyks4ntPa8eG1/MlWJjFY4BKdHMHPpGMOtm
+					TsqKbC0EpCJjLNZOZdFiPHBMruwPp+GbWLqv
+					Hh3bVWTTSSlUxw== )
+			38400	RRSIG	NSEC 10 4 38400 20110509140416 (
+					20110409140416 35867 a.example.com.
+					vBZjvwTSxQrPhbWUpe3zOA+vluRqGfIxDmi7
+					/XMR2oahJcRFQ9zbezuZh4iqLCRws3AifRKz
+					wS+v2DKYpQxGEAHszC9G9f/k8rZAHkxKKjQf
+					OiN0T8VM4sk+HLLk5pOaKnSncdcfAgaDLCtF
+					+P0Rsc/BHLOaTMqPBrEzwwjP7SE= )
+test17.a.example.com.	3600	IN A	192.168.0.217
+			3600	RRSIG	A 1 4 3600 20110509140416 (
+					20110409140416 16902 a.example.com.
+					vnp3EqniVLqFVaabIpPhhs2eWS+CaolagCvg
+					3oNqbh92Dvhmm3qcZLt5ajqO1R+Hm4Kt/74/
+					IK0YGMZKmhFPtg== )
+			3600	RRSIG	A 10 4 3600 20110509140416 (
+					20110409140416 35867 a.example.com.
+					fuRZ9hrB1Rf8SJz1kSCZegFs0HLug872IUXx
+					lRZCdBz0TrGl3+LaatR5rxoaho5yAIhPtYrz
+					rub5aq9jpmt50LSKCV3p0Kk3/oUnA7OB2Q1F
+					/DVM665G/bYJAksIfFS5VzJ6u1w6Ns74GZrQ
+					0eD+CIadE06BxiQuljdeCo9S/+Q= )
+			38400	NSEC	test18.a.example.com. A RRSIG NSEC
+			38400	RRSIG	NSEC 1 4 38400 20110509140416 (
+					20110409140416 16902 a.example.com.
+					QpvoKDem7RBPhr3E5wWV3jJk/8CM/7HJxGTB
+					lsulL/cCirlbljZbUZ6iKomTtF5uQ0xLT0z/
+					00Gov+Cf/I1ovw== )
+			38400	RRSIG	NSEC 10 4 38400 20110509140416 (
+					20110409140416 35867 a.example.com.
+					TGMSl5OIf8TUSfbcklEpFPkaLEOcWov8VDU7
+					rbt4MCYvXUNxzBoXwoylP/t0tppX8o0kzpxj
+					PifoPX9RZnVlvEPxgbX/8kNy3mkpEKHiK0eW
+					LAvbqQmHA1yXzwDpQ2uzdiXbPnJdn9IVbdBy
+					PC5XhYkobnJB/sWh4/8WLDul6Rs= )
+test4.a.example.com.	3600	IN A	192.168.0.204
+			3600	RRSIG	A 1 4 3600 20110509140416 (
+					20110409140416 16902 a.example.com.
+					j72/FOJnA3mfVc7nVK5IvZIOsOKylDYaleAV
+					a+8hz6kEcBdDaLPR3MSLjObND0Fv1+XUPvWw
+					979tq7ZrrtyD7Q== )
+			3600	RRSIG	A 10 4 3600 20110509140416 (
+					20110409140416 35867 a.example.com.
+					uiMfCPxQPnFWGmxwPox7pVzUFabGWVcvFbxg
+					Q4EXZOzrPk7MM2vutEcIikq700GJ4HCBjPur
+					rDIlMVQLpYzGqhTDZqI2vCtu3aRv1XWcCHkB
+					TMw8qsxqrhTNnFFY+g6e8uuLdpzcy+KlyqHS
+					ZzVl+YowS4fr8oIzhTWQPOzeoEc= )
+			38400	NSEC	test5.a.example.com. A RRSIG NSEC
+			38400	RRSIG	NSEC 1 4 38400 20110509140416 (
+					20110409140416 16902 a.example.com.
+					iHKl1E/t33RIsgKUFcgSLEhBnyV8QvYgK3RS
+					a6Ctt4pUfidgnha75/RiFnvnLY90QiTN4WeV
+					Kc+wv6OafHk7Rg== )
+			38400	RRSIG	NSEC 10 4 38400 20110509140416 (
+					20110409140416 35867 a.example.com.
+					wz7jmuWNdclphdSNWHRM5LEWf2lxl4gFrO7O
+					NU+0P8QOVFulShQPM349zSdvvHRGiFMpGZ0x
+					dAC/6t+m/jTSHH8gJfh4CLNvxk6MjQht88sQ
+					UVsg7iYF5V+zRwToz+tY5/kQnFUIvemoBGG4
+					YD58Efy3jbfxW8erN20SUr7oOMA= )
+test3.a.example.com.	3600	IN A	192.168.0.203
+			3600	RRSIG	A 1 4 3600 20110509140416 (
+					20110409140416 16902 a.example.com.
+					cZbOzxsnqj1IHYRvnP2xsBwIMU8x/cTWi7pA
+					m2WgMLDoKMFIRTcNGka7jMaI0EZ2fLzClbOU
+					yzDgfMfrOCezPA== )
+			3600	RRSIG	A 10 4 3600 20110509140416 (
+					20110409140416 35867 a.example.com.
+					QY6ZUy9/KMs+ma/tfcXMzDS6cRUfRYUjICBr
+					r9gLxdTK6UBCxkTXuVaL+T5KKAp0xosSYOY7
+					+MbX3clQb9S9jpcjL21Cri5RLI0QHreapZJg
+					64wPRqd7U4tj14jwIl/hQW2E8Aot4bRKZN2o
+					brLroc6QJ+RtQV9lr1fE9GBpW3Q= )
+			38400	NSEC	test4.a.example.com. A RRSIG NSEC
+			38400	RRSIG	NSEC 1 4 38400 20110509140416 (
+					20110409140416 16902 a.example.com.
+					FNU++cpXM2TcP085xdTMFlZp7BJ4mt5cC9SI
+					6fCjefY9JvwvM4HZgPFvxUhYmWzB8g3Fx7uV
+					07W/dTvl1MUTQw== )
+			38400	RRSIG	NSEC 10 4 38400 20110509140416 (
+					20110409140416 35867 a.example.com.
+					KWqAk9HI7ZkfQQhhhmLxX1mOsROG3JJRjvFA
+					OgpqPsxHI412j6uc7r8Qp0gQcoX6jhPml4RC
+					96v0KLSKW11/1R8Kw5LW3Xz486wuODks9O+J
+					VmwlYSLnTeddZnA38qpOl91fYp2zeGUdJgmS
+					reQxWWBJC8cNm8+fFJLnIrC8Q1c= )
+test6.a.example.com.	3600	IN A	192.168.0.206
+			3600	RRSIG	A 1 4 3600 20110509140416 (
+					20110409140416 16902 a.example.com.
+					HwZRA6NhjlOrIdN9ZfMM7VIaT+J2nCUP/98q
+					p8Ysao7hkauGdklvkrRvdEuNQ0Uw3rpRfKMn
+					0NxRybayty8LiQ== )
+			3600	RRSIG	A 10 4 3600 20110509140416 (
+					20110409140416 35867 a.example.com.
+					ixfHusTfgLFgZFViNuRF7N0CSLuCUOUHJLhW
+					adftfhzt3mV5IIPjQdxmVne4YI7OKJKSB7CF
+					JRb0EDi+FcDdFD82Jur5jjwbuM2XQpN2fplY
+					XP/J7SoR6BU93VS8383OORagPA0i3B4ZcAQ2
+					XNxi7xuL/eNBd3s4J8KC3W3f4pk= )
+			38400	NSEC	test7.a.example.com. A RRSIG NSEC
+			38400	RRSIG	NSEC 1 4 38400 20110509140416 (
+					20110409140416 16902 a.example.com.
+					JMEo24owLaRv6Jq5Yk847KiKttIG92AIoD+C
+					87JWalHojm3hM6xZIanpORm9JsGcL1cnYrDO
+					r2ujnxzWxRPkuA== )
+			38400	RRSIG	NSEC 10 4 38400 20110509140416 (
+					20110409140416 35867 a.example.com.
+					jTg6jYaSlMx/Z2gMjASRcF+1xmzCbhRXY2wy
+					UInq4+ey2ocwwxTfcZny6T70DbxdRiBGMEUM
+					nHIOjjiRqUJaf53WJ4fO5XMc+1iYX05xlbMk
+					TuXNeSJyKWbdFDUUc+FmMlVfDx3utL6anL1w
+					sc50A/FUltJrX8bhyEijm3hIGcA= )
+test5.a.example.com.	3600	IN A	192.168.0.205
+			3600	RRSIG	A 1 4 3600 20110509140416 (
+					20110409140416 16902 a.example.com.
+					X8mxDsWYKpmlLs+qqiHcytq1fZGndhBJbx8p
+					/nFLuK3n0AMgXjRqCBZuefGyHxr7OldvMR9y
+					+h3QEykU69mXCA== )
+			3600	RRSIG	A 10 4 3600 20110509140416 (
+					20110409140416 35867 a.example.com.
+					Rd0bHfFsaOCuX51qQ0AMviFLQ4JkdufvBEre
+					uP2MES8JIe8pd+sQBkurPJ4ajDtaCycmGyxz
+					7vAUakqm3eQBBfSleoN867bPVIedF8u9dN39
+					lLSz9VDgRqQVIUhiQdPvrVomwm4cilZvwtnA
+					pn3K36ZzfLTo/tUxeKuvwPthXUI= )
+			38400	NSEC	test6.a.example.com. A RRSIG NSEC
+			38400	RRSIG	NSEC 1 4 38400 20110509140416 (
+					20110409140416 16902 a.example.com.
+					pu921zHbrujco7kuw7o8mH2k6hZWrrR7NrV0
+					ksSN8jG+5/r3ql3lZjUc1IrLXgM6D/wBjPWI
+					YzVe8hiRxpUUag== )
+			38400	RRSIG	NSEC 10 4 38400 20110509140416 (
+					20110409140416 35867 a.example.com.
+					fVVcfBm/hdDhQpCU1OPXXReq0U5+zOldZHjO
+					qNsiwhTGkCipfT4Mcfx13cv7dOlVLmr7jCQi
+					nE2uyJZ93Zly9q9PCID3aUn0TE00aoKL1mCF
+					qlh8YF8GWaKDKmIpS87iI2YUB7TF0KkKnDvV
+					EMi4+6JU0JLJUo7fVuARC+mVQrU= )
+test7.a.example.com.	3600	IN A	192.168.0.207
+			3600	RRSIG	A 1 4 3600 20110509140416 (
+					20110409140416 16902 a.example.com.
+					KA+lKtP0xwDlt/rfr6uC3fpiFNdc6UkFhASS
+					HW4lFmEYDPf3ahESZq9dhqNiWMvYE1L1LpZY
+					wLS4NiRj55PeBA== )
+			3600	RRSIG	A 10 4 3600 20110509140416 (
+					20110409140416 35867 a.example.com.
+					wZ9oUyI6OpB6VPfwiVJ7zICcvOrXgKa1zxdu
+					pZxpUKxXVIMyGCmzqETntvYm5pkAhSuNekhV
+					YCsnP9b2ZqzpUVFl91fR9FbMC2CpmISFsJW7
+					gtTwUVFNF2qe3h4dsoTqlSMaU8mZGTGwlRGf
+					8ie0x1vk3sVAepy4cFOCjYYKlo4= )
+			38400	NSEC	test8.a.example.com. A RRSIG NSEC
+			38400	RRSIG	NSEC 1 4 38400 20110509140416 (
+					20110409140416 16902 a.example.com.
+					KB4eNE1EsptBJ4ubgZ8hsV/KEFCdh5eUMjtV
+					l6TZ9gh+25spcJACEEWxN84khKtyeaL5QGxy
+					t2JGWjG0SliyMg== )
+			38400	RRSIG	NSEC 10 4 38400 20110509140416 (
+					20110409140416 35867 a.example.com.
+					ScMa6aM7GtJWvHAywefB1Z3D00L8LPcyJ+3j
+					KuBbcl3vTrz+gpOx3aUcwmHW+pSAS9bHCoCX
+					vsB2z6JsWEs1fY3UG36ZT0BtaIJYFySuBEbl
+					V/1A/lLPAk211W2bHDu0NG5j39NjaZIk1Kcw
+					hoXGIr1Fpsvv4uVoQNXNEZCS9jY= )
+test9.a.example.com.	3600	IN A	192.168.0.209
+			3600	RRSIG	A 1 4 3600 20110509140416 (
+					20110409140416 16902 a.example.com.
+					kYFhPoeAMC+/nBxfkdCmzTQ0h0ODEtRYujiR
+					oQZPm4kbg6/OCvQtVmchXnxg+VOb1nvZctiv
+					eDFIYxyGL9HnaA== )
+			3600	RRSIG	A 10 4 3600 20110509140416 (
+					20110409140416 35867 a.example.com.
+					CjReOqces8EDpHxnJOLGcrkZg3mRfHOtebnZ
+					gnzqUc76deQ0EMaEMTABEuqsIDkHI6YunDLc
+					SnqG0gokGLlI4k6WSP7KSQ8dMppGw1lf1XOd
+					mX9so3KEJYQAKzD4Mpfcey7+fsEgBQPPo44N
+					G4WQ77qgaxVZxXNK42vIOVIPDwE= )
+			38400	NSEC	a.example.com. A RRSIG NSEC
+			38400	RRSIG	NSEC 1 4 38400 20110509140416 (
+					20110409140416 16902 a.example.com.
+					ltAtYuKgL9w6m6N4YWmdKXL2VgUL7ZVv19hy
+					a78kaQUyzX9YRsUFfoRI7GMwDWtmDsdeqV6F
+					Q3t2GOiuIbxuxw== )
+			38400	RRSIG	NSEC 10 4 38400 20110509140416 (
+					20110409140416 35867 a.example.com.
+					nnBGB6vbMK9iLqluvQ7a//vJsqWSipGoELiY
+					1IZ97zuF3iVbjvR/+DwhrX3sq6p2Xw6HVCRS
+					XgYJNLkHWVeVpy7oi6jJUoG/IjctzcTD2cVO
+					uWUgMbTRaHBcmJ3O4m+hJB2XR2GnB3Jefu7c
+					ElNxnkzrcozx81TXecU/Ub8VpM0= )
+test8.a.example.com.	3600	IN A	192.168.0.208
+			3600	RRSIG	A 1 4 3600 20110509140416 (
+					20110409140416 16902 a.example.com.
+					BiA0Iwk3JO4NDwmVR62Zkg1btcH1F6fuz0Ox
+					rk3Mh1NOjeT7hM83pWNTcT7HwTvQSVmKbH8+
+					Aj1qXszZsOENPg== )
+			3600	RRSIG	A 10 4 3600 20110509140416 (
+					20110409140416 35867 a.example.com.
+					muZFMQVcq8S45js3cJ8Z9/BoqOyGhS3enRsR
+					idEBz40258g+NNd4u/vX1ESm3v8ZAJMCR9WS
+					8/xhNLvmhWuYd+BR97/x6lGlCpeZILux8LMX
+					w9GwAVRIMxOB3+pYPLOUKSCrd5WQzt4sTY2t
+					sj0bPsqwxTM2WJns2Xlgk36GWbw= )
+			38400	NSEC	test9.a.example.com. A RRSIG NSEC
+			38400	RRSIG	NSEC 1 4 38400 20110509140416 (
+					20110409140416 16902 a.example.com.
+					c1Zl9XZbm69vXmEWCsYfN2AHktvPCmOP4Sxk
+					+SmzL25j4jnB6cUx8Y0qdD1e+7mCA4yMQ18N
+					h67Wl140ToP08A== )
+			38400	RRSIG	NSEC 10 4 38400 20110509140416 (
+					20110409140416 35867 a.example.com.
+					GcRRvZVkvp0mg8V+Q4ifN23Jv+zvapXX5QPZ
+					BlDqg5SBSwBYrONfGIg+u5P0+O1M72q35X+e
+					gPJtUu38ruug46Ba37I/83EEn/lZUuYc+nZa
+					KL2hd5FzBaJrH7Vi9SyrPdYAoNnbRRf9YFA0
+					jgyC0U7+2Q+gLkkHcPwYrmNWWK8= )
