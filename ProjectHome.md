@@ -1,0 +1,1 @@
+Main purpose of this tool is to perform automatic signature verification, tracking of cryptographic algorithms being used and inform about potential or found problems. It has been developed in cooperation with CZ.NIC and originaly was designed as a part of a bachelor thesis.
